@@ -30,5 +30,6 @@ printhelp() {
   echo "devinstall -h     ->  install requirements for project, including local overrides"
   echo "setupvenv -h      ->  setup/recreate virtualenv for project"
   echo "resetproject -h   ->  shortcut for setupvenv + devinstall"
+  echo "listyarnlink      ->  show all yarn-linked packages in current project"
   echo ""
 }
