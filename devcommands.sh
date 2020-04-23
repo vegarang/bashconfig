@@ -121,8 +121,8 @@ devgo() {
     else
       cd ~/code/$1
       workon $1
-      # done twice as hacky workaround for nvm not handling npm prefix..
-      nvm use default
+      # NOTE: If using node 9.11.1, you need to do this (nvm use default) twice
+      # to workaround npm-prefix-issues.. Fixed some time before node v12.13
       nvm use default
       if [ -z "$2" ]
       then
